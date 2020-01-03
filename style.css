@@ -244,8 +244,7 @@ header {
 }
 
 .works-step div {
-  color:
-    #FF69B4;
+  color: #FF69B4;
   border-radius: 50%;
   border: 2px solid #FF69B4;
   display: inline-block;
@@ -264,8 +263,51 @@ header {
   margin-right: 10px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: 0;
+}
+
 .works-step:last-of-type {
   margin-bottom: 60px;
 }
 
 /******** CITIES *********/
+.box img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
+}
+
+.icon-small {
+  color: #FF69B4;
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  font-size: 120%;
+  margin-right: 5px;
+
+  /* secrets to align text and icons */
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+}
+
+/******** LINKS *********/
+a:link,
+a:visited {
+  color: #FF69B4;
+  text-decoration: none;
+  padding-bottom: 1px;
+  transition: border-bottom 0.9s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 2px solid transparent
+}
