@@ -15,11 +15,11 @@ html {
 }
 
 .clearfix {
-  zoom: 1
+  zoom: 1;
 }
 
 .clearfix:after {
-  content: '.';
+  content: ".";
   clear: both;
   display: block;
   height: 0;
@@ -29,7 +29,6 @@ html {
 .row {
   max-width: 1140px;
   margin: 0 auto;
-
 }
 
 .box {
@@ -44,11 +43,9 @@ section {
 h1,
 h2,
 h3 {
-
   font-weight: 380;
   text-transform: uppercase;
   letter-spacing: 1px;
-
 }
 
 h1 {
@@ -57,7 +54,6 @@ h1 {
   color: #fff;
   font-size: 240%;
   word-spacing: 4px;
-
 }
 
 h2 {
@@ -74,7 +70,7 @@ h3 {
 h2:after {
   display: block;
   height: 2px;
-  background-color: #FF69B4;
+  background-color: #ff69b4;
   content: "";
   width: 180px;
   margin: 0 auto;
@@ -86,24 +82,20 @@ h2:after {
   line-height: 145%;
   width: 70%;
   margin-left: 15%;
-
 }
 
 .box p {
   font-size: 90%;
   line-height: 145%;
-
 }
 
 /******** ICONS ***********/
 .icon-big {
   font-size: 350%;
   display: block;
-  color: #FF69B4;
+  color: #ff69b4;
   margin-bottom: 10px;
-
 }
-
 
 /******** BUTTONS ***********/
 .btn:link,
@@ -122,16 +114,16 @@ h2:after {
 .one:visited {
   /* background-color: #FF69B4; */
   outline: none;
-  border: 1px solid #FF69B4;
+  border: 1px solid #ff69b4;
 }
 
 .two:link,
 .two:visited {
-  border: 1px solid #FF69B4;
+  border: 1px solid #ff69b4;
 }
 
 .btn:hover {
-  background-color: #FF69B4;
+  background-color: #ff69b4;
 }
 
 /******** HEADER *********/
@@ -178,7 +170,7 @@ header {
 }
 
 .main-nav li:hover {
-  border-bottom: 1px solid #FF69B4;
+  border-bottom: 1px solid #ff69b4;
 }
 
 /******** FEATURES *********/
@@ -225,14 +217,12 @@ header {
 
 /******** HOW IT WORKS *********/
 
-
 .steps-box:first-child {
   text-align: right;
   padding-right: 3%;
 }
 
 .steps-box:last-child {
-
   padding-left: 3%;
 }
 
@@ -245,9 +235,9 @@ header {
 }
 
 .works-step div {
-  color: #FF69B4;
+  color: #ff69b4;
   border-radius: 50%;
-  border: 2px solid #FF69B4;
+  border: 2px solid #ff69b4;
   display: inline-block;
   height: 55px;
   width: 55px;
@@ -285,7 +275,7 @@ header {
 }
 
 .icon-small {
-  color: #FF69B4;
+  color: #ff69b4;
   display: inline-block;
   width: 25%;
   text-align: center;
@@ -301,7 +291,7 @@ header {
 /******** LINKS *********/
 a:link,
 a:visited {
-  color: #FF69B4;
+  color: #ff69b4;
   text-decoration: none;
   padding-bottom: 1px;
   transition: border-bottom 0.9s, color 0.2s;
@@ -310,13 +300,14 @@ a:visited {
 a:hover,
 a:active {
   color: #555;
-  border-bottom: 2px solid transparent
+  border-bottom: 2px solid transparent;
 }
 
 /******** CUSTOMERS *********/
 
 .section-testimonials {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(img/back-customers.jpg);
   background-size: cover;
   color: white;
   background-attachment: fixed;
@@ -338,4 +329,66 @@ cite img {
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+  /* secrets to align text and icons */
+  vertical-align: middle;
+}
+
+/******** SIGN UP FORM *********/
+
+.section-plans {
+  background-color: #f4f4f4;
+}
+.plan-box {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 5%;
+}
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #e8e8e8;
+}
+.plan-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #ff69b4;
+}
+.plan-price-meal {
+  font-size: 80%;
+}
+.plan-box ul {
+  list-style: none;
+}
+.plan-box ul li {
+  padding: 5px 0;
+}
+.plan-box div:last-child {
+  text-align: center;
+}
+
+/******** FOOTER *********/
+footer {
+  background-color: #333;
+  padding: 60px;
+}
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+.social-links {
+  list-style: none;
+  float: right;
+  margin-left: 450px;
+}
+.footer-nav li,
+.social-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+footer p {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 30px;
 }
