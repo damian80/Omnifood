@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -109,6 +110,7 @@ h2:after {
   text-decoration: none;
   border-radius: 200px;
   color: white;
+  -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
   transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
 
@@ -130,6 +132,8 @@ h2:after {
 
 /******** HEADER *********/
 header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))),
+    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   background-size: cover;
@@ -143,14 +147,25 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
-.logo {
+.logo,
+  {
   height: 100px;
   width: auto;
   float: left;
   margin-top: 20px;
+}
+
+.logo-black {
+  display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .main-nav {
@@ -173,6 +188,31 @@ header {
 
 .main-nav li:hover {
   border-bottom: 1px solid #ff69b4;
+}
+
+/******** STICKY NAV *********/
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 2px 2px #e67;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+  padding: 15px 0;
+  color: #555;
+}
+
+.sticky .logo {
+  display: none;
+}
+
+.sticky .logo-black {
+  display: block;
 }
 
 /******** FEATURES *********/
@@ -204,8 +244,12 @@ header {
   opacity: 0.7;
   width: 100%;
   height: auto;
+  -webkit-transform: scale(1.15);
   transform: scale(1.15);
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .section-meals {
@@ -213,6 +257,7 @@ header {
 }
 
 .meal-photo img:hover {
+  -webkit-transform: scale(1.03);
   transform: scale(1.03);
   opacity: 1;
 }
@@ -296,6 +341,7 @@ a:visited {
   color: #ff69b4;
   text-decoration: none;
   padding-bottom: 1px;
+  -webkit-transition: border-bottom 0.9s, color 0.2s;
   transition: border-bottom 0.9s, color 0.2s;
 }
 
@@ -308,6 +354,8 @@ a:active {
 /******** CUSTOMERS *********/
 
 .section-testimonials {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))),
+    url(img/back-customers.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(img/back-customers.jpg);
   background-size: cover;
